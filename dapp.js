@@ -213,10 +213,11 @@ const writeFileIpfs = async (path, data) => {
     if (txresponse.y) {
       PAGE_Y = txresponse.y;
     }
-    await calculateRelativeImage();
-    await draw();
-    const buffer = canvas.toBuffer("image/png");
-    console.log(buffer);
+    calculateRelativeImage();
+    draw();
+    const bufferdata = canvas.toBuffer("image/png");
+    console.log(bufferdata);
+    await writeFileIpfs(`${statePath}/image.png`, bufferdata);
   } catch (e) {
     console.log(e);
     process.exit(1);
