@@ -1,7 +1,7 @@
 const rollupServer = process.env.ROLLUP_HTTP_SERVER_URL;
 console.log(`HTTP rollup_server url is ${rollupServer}`);
 import { create } from "ipfs-http-client";
-
+import { createCanvas } from "canvas";
 const apiUrl = process.env.IPFS_API || "http://127.0.0.1:5001";
 const ipfs = create({ url: apiUrl });
 

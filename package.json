@@ -10,6 +10,7 @@
   "author": "jj",
   "license": "ISC",
   "dependencies": {
-    "canvas": "^2.11.2"
+    "canvas": "^2.11.2",
+    "ipfs-http-client": "^60.0.1"
   }
 }
