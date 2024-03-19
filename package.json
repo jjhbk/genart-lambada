@@ -1,0 +1,15 @@
+{
+  "name": "genart-lambada",
+  "version": "1.0.0",
+  "description": "A DApp that generates mandelbrot images in a deterministic fashion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "jj",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.11.2"
+  }
+}
